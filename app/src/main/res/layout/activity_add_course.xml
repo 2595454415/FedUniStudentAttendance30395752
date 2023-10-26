@@ -1,0 +1,324 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCourseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PleaseEnterTheCourseNumber" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PleaseEnterTheCourseName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnPickStartDate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT_START_DATE" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="START_DATE" />
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/toLastPager"
+            android:text="previous"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tx_pager"
+            android:text="1week"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/toNextPager"
+            android:text="next"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+
+            android:text="sunday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="monday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="tuesday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="wednesday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="thursday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="friday"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="saturday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.necer.calendar.WeekCalendar
+        app:todayCheckedBackground="@color/green"
+        app:todayCheckedSolarTextColor="@color/green"
+        app:defaultCheckedLunarTextColor="@color/white"
+        app:todayCheckedLunarTextColor="@color/white"
+        app:todayUnCheckedLunarTextColor="@color/white"
+        app:defaultUnCheckedLunarTextColor="@color/white"
+        android:id="@+id/btnPickStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnPickEndDate2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT_END_DATE"
+         />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="END_DATE"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/toLastPager2"
+            android:text="上一周"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/tx_pager2"
+            android:text="第1周"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/toNextPager2"
+            android:text="下一周"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+
+            android:text="sunday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="monday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="tuesday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="wednesday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="thursday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="friday"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="saturday"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.necer.calendar.WeekCalendar
+        app:todayCheckedBackground="@color/green"
+        app:todayCheckedSolarTextColor="@color/green"
+        app:defaultCheckedLunarTextColor="@color/white"
+        app:todayCheckedLunarTextColor="@color/white"
+        app:todayUnCheckedLunarTextColor="@color/white"
+        app:defaultUnCheckedLunarTextColor="@color/white"
+        android:id="@+id/btnPickEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+    <TextView
+        android:gravity="center"
+        android:text="Please choose which day of the week there is a class.（You can swipe the calendar left and right.）"
+        android:textColor="@color/cadetblue"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <com.necer.calendar.WeekCalendar
+        app:todayCheckedBackground="@color/green"
+        app:todayCheckedSolarTextColor="@color/green"
+        app:defaultCheckedLunarTextColor="@color/white"
+        app:todayCheckedLunarTextColor="@color/white"
+        app:todayUnCheckedLunarTextColor="@color/white"
+        app:defaultUnCheckedLunarTextColor="@color/white"
+        android:id="@+id/upclassDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>

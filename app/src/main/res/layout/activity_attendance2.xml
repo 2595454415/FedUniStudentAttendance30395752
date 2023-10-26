@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <com.necer.calendar.MonthCalendar
+        android:visibility="gone"
+        app:todayCheckedBackground="@color/green"
+        app:todayCheckedSolarTextColor="@color/green"
+        app:defaultCheckedLunarTextColor="@color/white"
+        app:todayCheckedLunarTextColor="@color/white"
+        app:todayUnCheckedLunarTextColor="@color/white"
+        app:defaultUnCheckedLunarTextColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <DatePicker
+        android:visibility="gone"
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.hdev.calendar.view.SingleCalendarView
+        android:id="@+id/weekCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="15dp"
+          />
+    <!-- 出勤情况列表视图 -->
+    <ListView
+        android:id="@+id/attendanceListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
